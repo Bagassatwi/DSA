@@ -6,6 +6,16 @@ public class Mahasiswa05 {
   String kelas;
   double ipk;
 
+  public Mahasiswa05(String nama, String nim, String kelas, double ipk) {
+    this.nama = nama;
+    this.nim = nim;
+    this.kelas = kelas;
+    this.ipk = ipk;
+  }
+
+  public Mahasiswa05() {
+  }
+
   void ubahKelas(String kelas) {
     this.kelas = kelas;
   }

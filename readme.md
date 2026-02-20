@@ -1,4 +1,6 @@
-## Jobsheet 2 ASD
+# Jobsheet 2 ASD
+
+## 2.1.3 Questions
 
 ### 1. Name two characteristics of a class or object!
 * **Attributes (State):** Variables that define the data
@@ -45,3 +47,56 @@ The method uses conditional `if-else if-else` structure to print the current val
 * **Return Value:** A `String` representing the descriptive performance category.
 ### 6. Commit and push program code to Github
 <https://github.com/Bagassatwi/DSA>
+
+## 2.2.3 Questions
+
+### 1. In the StudentMain class, indicate the line of program code used for the instance process! What is the name of the resulting object?
+The line of code used for the instance process is:
+`Mahasiswa05 mhs1 = new Mahasiswa05();`
+* The resulting object name is **`mhs1`**.
+
+### 2. How do I access the attributes and methods of an object?
+
+Attributes and methods of an object are accessed using the dot operator **`.`**.
+
+* **Syntax for Attributes:** `objectName.attributeName = value;` (e.g., `mhs1.nama = "..."`)
+* **Syntax for Methods:** `objectName.methodName(arguments);` (e.g., `mhs1.tampilkanInformasi()`)
+
+### 3. Why are the output output results of the method tampilkanInformasi() first and second different?
+
+The output of the two `tampilkanInformasi()` calls differs because we used the method `ubahKelas` and `updateIpk` which changes the data of the object
+
+## 2.3.3 Questions
+
+### 1. In the Mahasiswa class in practicum 3, indicate the program code line used to declare a parameterized constructor!
+```java
+public Mahasiswa05(String nama, String nim, String kelas, double ipk) {   
+    this.nama = nama;
+    this.nim = nim;
+    this.kelas = kelas;
+    this.ipk = ipk;
+}
+```
+
+### 2. Pay attention to the StudentMain class. What exactly does the following line of program do?
+
+The line `Mahasiswa05 mhs2 = new Mahasiswa05("Nabila Salsabila Putri", "252105020125", "TKI 1A", 3.78);` does everything below:
+* **Declaration:** `Mahasiswa05 mhs2` creates a reference variable of type `Mahasiswa05`.
+* **Initialization:** The constructor value is given, assigning **"Nabila Salsabila Putri"** to `nama`, **"252105020125"** to `nim`, **"TKI 1A"** to `kelas`, and **3.78** to `ipk`.
+### 3. Remove the default constructor on the Mahasiswa class, and then compile and run the program. How did it turn out? Explain why this is the case!
+
+The program will fail to compile, because:
+
+* A constructor with a parameter is already defined in `Mahasiswa05`, the compiler does not generate the default constructor if not explicitly defined.
+* In `StudentMain05`, the line `Mahasiswa05 mhs1 = new Mahasiswa05();` attempts to call a default constructor, which doesn't exist.
+
+### 4. After instantiating the object, do the methods in the Mahasiswa class have to be accessed sequentially? Explain why!
+
+No, because they're an independent functions which means executing one does not require the execution of the other
+
+### 5. Create a new object with the name mhs<StudentName> using the parameterized constructor from the Mahasiswa class!
+
+```java
+    Mahasiswa05 mhsBella = new Mahasiswa05("Nabila Putri Widya", "250101020125", "TKI 1B", 4);
+```
+### 6. Commit and push program code to Github
