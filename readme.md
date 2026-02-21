@@ -100,3 +100,7 @@ No, because they're an independent functions which means executing one does not 
     Mahasiswa05 mhsBella = new Mahasiswa05("Nabila Putri Widya", "250101020125", "TKI 1B", 4);
 ```
 ### 6. Commit and push program code to Github
+<https://github.com/Bagassatwi/DSA>
+
+## 2.4 Practicum Exercises
+<https://github.com/Bagassatwi/DSA>
